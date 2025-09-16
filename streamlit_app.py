@@ -9,7 +9,7 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 st.set_page_config(page_title="Toxicity Detector", page_icon="🧪", layout="centered")
 
 # Путь к модели: по умолчанию используем best из ноутбука
-# Можно переопределить через переменную окружения MODEL_DIR
+
 DEFAULT_MODEL_DIR = "notebooks/civil_comments_distilbert/best"
 MODEL_DIR = os.environ.get("MODEL_DIR", DEFAULT_MODEL_DIR)
 THRESHOLD = float(os.environ.get("THRESHOLD", 0.5))
