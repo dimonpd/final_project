@@ -59,15 +59,6 @@ uv run jupyter lab
 - `MODEL_DIR` — путь к модели HF (по умолчанию: `./civil_comments_distilbert/best` внутри контекста сервиса)
 - `THRESHOLD` — порог для класса «токсичный» (по умолчанию: `0.5`)
 
-Локальный запуск (из корня проекта):
-
-```bash
-source .venv/bin/activate
-export MODEL_DIR="notebooks/civil_comments_distilbert/best"
-export THRESHOLD=0.5
-uv run uvicorn service.app:app --reload --port 8000
-```
-
 ## Streamlit-приложение
 
 Интерактивное приложение для ручной проверки одного комментария.
@@ -76,8 +67,8 @@ uv run uvicorn service.app:app --reload --port 8000
 
 ```bash
 source .venv/bin/activate
-export MODEL_DIR="notebooks/civil_comments_distilbert/best"   # при необходимости
-export THRESHOLD=0.5                                           # при необходимости
+export MODEL_DIR="notebooks/civil_comments_distilbert/best"
+export THRESHOLD=0.5
 streamlit run streamlit_app.py
 ```
 
