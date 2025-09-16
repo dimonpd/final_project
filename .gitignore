@@ -1,0 +1,38 @@
+data/
+catboost_info/
+instance.env
+obsidian/
+__pycache__/
+*.cbm
+**/*.cbm
+*.csv
+*.json
+*.log
+*.zip
+poetry.lock
+pytorch-env/
+.venv/
+<<<<<<< HEAD
+.venv
+*demo_emotion_data/
+ 
+# ML artifacts and checkpoints (prevent huge pushes)
+**/checkpoint-*/
+**/runs/
+**/wandb/
+**/lightning_logs/
+**/outputs/
+**/logs/
+**/best/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+*.safetensors
+*.h5
+*.joblib
+*.pkl
+=======
+*demo_emotion_data/
+>>>>>>> 655f29d518d04c7361e646ff13932d80f5cb3c99
